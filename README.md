@@ -15,7 +15,9 @@
 
 
 # :memo: Introduction
+
 This project proposed the analyse of consumer behaviour in order to assist a business to build an effective and targeted marketing strategy. 
+
 To do this we will build predictive models on data sets compiled from e-Commerce giants, Amazon & Walmart datasets.
 
 •***Build a Sentiment Analysis model*** to predict the effect on sales in relation to customer reviews.
@@ -28,61 +30,122 @@ To do this we will build predictive models on data sets compiled from e-Commerce
 Examine customer sensitivity to price by ***building a linear regression model on the Walmart*** dataset.
 
 The retail industry has taken a 180 degree turn with the rise in online shopping. In 2019, retail e-commerce sales worldwide amounted to 3.53 trillion US dollars and e-retail revenues are projected to grow to 6.54 trillion US dollars by 2022.
+
 It was predicted that in 2020 the global e-commerce market exceed 4 trillion dollars, and one in every four online consumers purchases from stores once a week according to Invespcro (2020) report.
 
 # :rocket: Preprocessing and Cleaning dataset
 
 **Importing Libraries**
+
 * Visualization libraries
+
 Pandas
-Numpy
+
 Seaborn
+
 Matplotlib.pyplot 
+
 %matplotlib inline
+
 Plotly.express as px
 
 * NLTK libraries
+* 
 nltk
+
 re
+
 Wordcloud
+
 PorterStemmer
+
 TfidfVectorizer
+
 Stopwords
+
 Word_tokenize
+
 TextBlob
 
 * Machine Learning libraries
+
 sklearn 
+
 SVC
+
 LabelEncoder
+
 StandardScaler
+
 MinMaxScaler
+
 Preprocessing import normalize
+
 ExtraTreesClassifier
+
 GridSearchCV
+
 LogisticRegression
+
 DecisionTreeClassifier
+
 BernoulliNB 
+ 
 KNeighborsClassifier
+
 OneVsRestClassifier
+
 model_selection import train_test_split
+
 label_binarize
 
 * Other Libraries
+
 Counter
+
 SMOTE
+
 CountVectorizer
+
 
 ⌛️ Dataset features
 
-uniq_id | product_name | manufacturer | price | number_available_in_stock | number_of_reviews | number_of_answered_questions |
+uniq_id 
 
-average_review_rating | amazon_category_and_sub_category | customers_who_bought_this_also_bought | description | product_information |
+product_name 
 
-product_description | items_customers_buy_after_viewing_this_item | customer_questions_and_answers | customer_reviews | sellers 
+manufacturer 
+
+price 
+
+number_available_in_stock 
+
+number_of_reviews 
+
+number_of_answered_questions 
+
+average_review_rating 
+
+amazon_category_and_sub_category 
+
+customers_who_bought_this_also_bought 
+
+description 
+
+product_information 
+
+product_description 
+
+items_customers_buy_after_viewing_this_item 
+
+customer_questions_and_answers 
+
+customer_reviews 
+
+sellers 
 
 
-# :festivus: Story Generation and Visualization from reviews
+# :Festivus: Story Generation and Visualization from reviews
 
 
 By go further in the exploratory data analysis on texts we are try to understand what features contributes to the sentiment category.
@@ -93,14 +156,16 @@ Prior analysis assumptions:
 
 * There are be many positive sentiment reviews which lead to bias
 
-* These assumptions will be verified with our plots also we will do text analysis.
+* These assumptions will be verified with our plots also we will do text analysis
 
 # :runner: Text reviews
 
 ### Review Text Ponctuation and creat stop words
-NLKT stop words contains words like not, hasn't,would'nt which actually conveys a negative sentiment. If we remove that it will end up contradicting the target variable(sentiment). So I have curated the stop words which doesn't have any negative sentiment or any negative alternatives.
+NLKT stop words contains words like not, hasn't, would'nt which actually conveys a negative sentiment. If we remove that it will end up contradicting the target variable(sentiment). So I have curated the stop words which doesn't have any negative sentiment or any negative alternatives.
 
-### Creating additional features for text analysis
+
+### Creating additional features for text analysis.
+
 Create polarity, review length and word count
 
 Polarity: By using Textblob for figuring out the rate of sentiment between [-1,1] where -1 is negative and 1 is positive
@@ -108,7 +173,6 @@ Polarity: By using Textblob for figuring out the rate of sentiment between [-1,1
 Review length: length of the review which includes each letters and spaces
 
 Word length: It measures how many words are in the customer review column
-
 
 # :worker: Extracting Features from Cleaned reviews
 
@@ -134,7 +198,7 @@ Machine Learning Models:
 * LOGISTIC REGRESSION
 
 * RANDOM FOREST CLASSIFIER
-* 
+
 * SVC - SUPORT VECTOR MACHINE
 
 
@@ -160,4 +224,4 @@ Released in March 2021.
 
 This project is under the [MIT license](https://github.com/AndreisSirlene/Sentiment-reviews-AWS/blob/master/LICENSE).
 
-Made with love by [Sirlene Andreis](https://github.com/andreisSirlene) 💚🚀
+Made with love by [Sirlene Andreis](https://github.com/AndreisSirlene) 💚🚀
