@@ -50,7 +50,7 @@ Matplotlib.pyplot
 Plotly.express as px
 
 * NLTK libraries
-* 
+
 nltk
 
 re
@@ -110,42 +110,11 @@ CountVectorizer
 
 ⌛️ Dataset features
 
-uniq_id 
-
-product_name 
-
-manufacturer 
-
-price 
-
-number_available_in_stock 
-
-number_of_reviews 
-
-number_of_answered_questions 
-
-average_review_rating 
-
-amazon_category_and_sub_category 
-
-customers_who_bought_this_also_bought 
-
-description 
-
-product_information 
-
-product_description 
-
-items_customers_buy_after_viewing_this_item 
-
-customer_questions_and_answers 
-
-customer_reviews 
-
-sellers 
+uniq_id, product_name, manufacturer, price, number_available_in_stock, number_of_reviews, number_of_answered_questions, average_review_rating,
+amazon_category_and_sub_category, customers_who_bought_this_also_bought, description, product_information, product_description, items_customers_buy_after_viewing_this_item, customer_questions_and_answers, customer_reviews, sellers 
 
 
-# :Festivus: Story Generation and Visualization from reviews
+# :festivus: Story Generation and Visualization from reviews
 
 
 By go further in the exploratory data analysis on texts we are try to understand what features contributes to the sentiment category.
