@@ -66,7 +66,7 @@ uniq_id, product_name, manufacturer, price, number_available_in_stock, number_of
 amazon_category_and_sub_category, customers_who_bought_this_also_bought, description, product_information, product_description, items_customers_buy_after_viewing_this_item, customer_questions_and_answers, customer_reviews, sellers 
 
 
-# :festivus: Story Generation and Visualization from reviews
+# :👀: Story Generation and Visualization from reviews
 
 
 By go further in the exploratory data analysis on texts we are try to understand what features contributes to the sentiment category.
@@ -95,7 +95,7 @@ Review length: length of the review which includes each letters and spaces
 
 Word length: It measures how many words are in the customer review column
 
-# :worker: Extracting Features from Cleaned reviews
+# :🐱‍👤: Extracting Features from Cleaned reviews
 
 Before we build the model for our sentiment analysis, it is required to convert the review texts into vector formation as computer cannot understand words and their sentiment. In this project, we are going to use TF-TDF method to convert the texts.
 
