@@ -10,7 +10,7 @@
 * [Story Generation and Visualization from reviews](#festivus-story-generation-and-visualization-from-reviews)
 * [Text reviews](#runner-text-reviews)
 * [Extracting Features from Cleaned reviews](#worker-extracting-features-from-cleaned-reviews)
-* [Model Building: Sentiment Analysis](#closed-book-model-building-sentiment-analysis)
+* [Model Building: Sentiment Analysis](#closedbook-model-building-sentiment-analysis)
 * [Group Project](#tada-group-project)
 
 
@@ -39,73 +39,25 @@ It was predicted that in 2020 the global e-commerce market exceed 4 trillion dol
 
 * Visualization libraries
 
-Pandas
-
-Seaborn
-
-Matplotlib.pyplot 
-
-%matplotlib inline
-
-Plotly.express as px
+Pandas, Seaborn, Matplotlib.pyplot, Plotly.express as px
 
 * NLTK libraries
 
-nltk
-
-re
-
-Wordcloud
-
-PorterStemmer
-
-TfidfVectorizer
-
-Stopwords
-
-Word_tokenize
-
-TextBlob
+nltk, re, Wordcloud, PorterStemmer, TfidfVectorizer, Stopwords, Word_tokenize, TextBlob
 
 * Machine Learning libraries
 
-sklearn 
+sklearn, SVC, LabelEncoder, StandardScaler, Preprocessing import normalize, ExtraTreesClassifier, GridSearchCV
 
-SVC
+* Machine Learning Models
 
-LabelEncoder
+LogisticRegression, DecisionTreeClassifier, BernoulliNB, KNeighborsClassifier, OneVsRestClassifier
 
-StandardScaler
-
-MinMaxScaler
-
-Preprocessing import normalize
-
-ExtraTreesClassifier
-
-GridSearchCV
-
-LogisticRegression
-
-DecisionTreeClassifier
-
-BernoulliNB 
- 
-KNeighborsClassifier
-
-OneVsRestClassifier
-
-model_selection import train_test_split
-
-label_binarize
+model_selection import train_test_split, label_binarize
 
 * Other Libraries
 
-Counter
-
-SMOTE
-
-CountVectorizer
+Counter, SMOTE, CountVectorizer
 
 
 ⌛️ Dataset features
@@ -157,18 +109,10 @@ There is another technique knows as Lemmatization where it converts the words in
 ### Handling Imbalance target using feature-SMOTE
 We noticed that we got a lot of positive sentiments compared to negative and neutral. So it is crucial to balanced the classes in such situation. SMOTE(Synthetic Minority Oversampling Technique)is used to balance out the imbalanced dataset problem. It aims to balance class distribution by randomly increasing minority class examples by replicating them.
 
-# :closed-book: Model Building: Sentiment Analysis
+# 😝: Model Building: Sentiment Analysis
 
 Sentiment Analysis refers to the use of natural language processing, text analysis, computational linguistics, and biometrics to systematically identify, extract, quantify, and study affective states and subjective information. 
 Understanding people’s emotions is essential for businesses since customers are able to express their thoughts and feelings more openly than ever before.It is quite hard for a human to go through each single line and identify the emotion being the user experience. With machine learning models nowadays we can automatically analyzing customer feedback, from product reviews and survey responses to social media conversations for example, which allows to tailor products and services to meet customer needs.
-
-Machine Learning Models:
-
-* LOGISTIC REGRESSION
-
-* RANDOM FOREST CLASSIFIER
-
-* SVC - SUPORT VECTOR MACHINE
 
 
 # :tada: Group Project
